@@ -7,14 +7,17 @@ export const personalDetails = {
     {
       id: "about",
       title: "About",
+      path:"/about"
     },
     {
       id: "work",
       title: "Work",
+       path:"/work"
     },
     {
       id: "contact",
       title: "Contact",
+       path:"/contact"
     },
   ];
 

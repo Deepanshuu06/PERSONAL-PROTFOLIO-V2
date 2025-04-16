@@ -1,38 +1,44 @@
-import React, { useEffect, useRef } from "react";
+// App.jsx
+import React from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+} from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import IntroSection from "./components/IntroSection";
-import Marquee from "./components/Marquee";
+import Body from "./components/Body";
 import Eyes from "./components/Eyes";
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
+import Error from "./components/ErrorPage";
+import Contact from "./components/Contact";
+
+
+// Layout with Navbar + nested routes
+const RootLayout = () => (
+  <div className="bg-black min-h-screen text-white">
+    <Navbar />
+    <Outlet />
+  </div>
+);
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { path: "/", element: <Body /> },
+      { path: "/eye", element: <Eyes /> },
+      { path: "/contact", element: <Contact/> },
+      { path: "/eye", element: <Eyes /> },
+      { path: "*", element: <Error/> },
+    ],
+  },
+]);
+
 
 function App() {
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      lerp: 0.075, // optional: tweak for scroll "weight"
-    });
-
-    return () => {
-      if (scroll) scroll.destroy(); // clean up
-    };
-  }, []);
-
-  return (
-    <div data-scroll-container ref={scrollRef} className="bg-black">
-      <Navbar />
-      <Hero />
-      <IntroSection />
-      <Marquee />
-      <About />
-      {/* <Eyes/> */}
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
