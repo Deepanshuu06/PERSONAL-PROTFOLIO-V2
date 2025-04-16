@@ -18,14 +18,21 @@ export const personalDetails = {
     },
   ];
 
-    export const logos =  [ { src: "https://images.ctfassets.net/23aumh6u8s0i/6pjUKboBuFLvCKkE3esaFA/5f2101d6d2add5c615db5e98a553fc44/nextjs.jpeg", alt: "Next.js" },
-          { src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", alt: "React" },
-          { src: "https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg", alt: "MongoDB" },
-          { src: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png", alt: "HTML5" },
-          { src: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg", alt: "CSS3" },
-          { src: "https://www.vectorlogo.zone/logos/nestjs/nestjs-ar21.svg", alt: "NestJS" },
-          { src: "https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg", alt: "GraphQL" },
-        ]
+  export const logos = [
+    { src: "https://images.ctfassets.net/23aumh6u8s0i/6pjUKboBuFLvCKkE3esaFA/5f2101d6d2add5c615db5e98a553fc44/nextjs.jpeg", alt: "Next.js" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", alt: "React" },
+    { src: "https://cdn.worldvectorlogo.com/logos/redux.svg", alt: "Redux Toolkit" },
+    { src: "https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg", alt: "MongoDB" },
+    { src: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png", alt: "HTML5" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg", alt: "CSS3" },
+    { src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg", alt: "Tailwind CSS" },
+    { src: "https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg", alt: "Git" },
+    { src: "https://www.vectorlogo.zone/logos/github/github-tile.svg", alt: "GitHub" },
+    { src: "https://www.vectorlogo.zone/logos/linux/linux-ar21.svg", alt: "Linux" },
+    { src: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg", alt: "Postman" },
+    { src: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg", alt: "JavaScript" },
+    { src: "https://www.vectorlogo.zone/logos/nestjs/nestjs-ar21.svg", alt: "NestJS" },
+  ];
   
 //   const services = [
 //     {
@@ -46,61 +53,7 @@ export const personalDetails = {
 //     },
 //   ];
   
-//   const technologies = [
-//     {
-//       name: "HTML 5",
-//       icon: html,
-//     },
-//     {
-//       name: "CSS 3",
-//       icon: css,
-//     },
-//     {
-//       name: "JavaScript",
-//       icon: javascript,
-//     },
-//     {
-//       name: "TypeScript",
-//       icon: typescript,
-//     },
-//     {
-//       name: "React JS",
-//       icon: reactjs,
-//     },
-//     {
-//       name: "Redux Toolkit",
-//       icon: redux,
-//     },
-//     {
-//       name: "Tailwind CSS",
-//       icon: tailwind,
-//     },
-//     {
-//       name: "Node JS",
-//       icon: nodejs,
-//     },
-//     {
-//       name: "MongoDB",
-//       icon: mongodb,
-//     },
-//     {
-//       name: "Three JS",
-//       icon: threejs,
-//     },
-//     {
-//       name: "git",
-//       icon: git,
-//     },
-//     {
-//       name: "figma",
-//       icon: figma,
-//     },
-//     {
-//       name: "docker",
-//       icon: docker,
-//     },
-//   ];
-  
+
 //   const experiences = [
 //     {
 //       title: "Frontend Developer",

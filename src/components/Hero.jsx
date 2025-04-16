@@ -16,7 +16,7 @@ function Hero() {
     gsap.from(nameRef.current, {
       opacity: 0,
       y: -50,
-      duration: 1,
+      duration: 3,
       ease: "power3.out",
     });
 
@@ -39,20 +39,23 @@ function Hero() {
 
   return (
     <div
-      className={`min-h-screen min-w-screen ${styles.paddingX} mx-auto flex flex-col items-center justify-center `}
+      className={`min-h-screen min-w-screen ${styles.paddingX} mx-auto flex flex-col items-center  lg:justify-center `}
     >
-      <div className="items-center flex flex-col ">
+      <div className="items-center flex flex-col pt-48 lg:pt-0  ">
         <div className="items-center flex flex-col">
-          <h1 ref={nameRef} className="text-8xl font-extrabold uppercase">
+          <h1
+            ref={nameRef}
+            className=" text-3xl lg:text-8xl font-extrabold uppercase"
+          >
             Deepanshu Baghel
           </h1>
           <h1
             ref={titleRef}
-            className="text-7xl font-extrabold uppercase flex items-center"
+            className=" text-2xl lg:text-7xl font-extrabold uppercase flex items-center"
           >
             Full-Stack Devel
             <span ref={codeIconRef} className="bg-green p-3 rounded-full mx-2">
-              <FaCode className="text-4xl" />
+              <FaCode className="text-xl lg:text-4xl" />
             </span>
             per
           </h1>
@@ -71,33 +74,29 @@ function Hero() {
         </div>
       </div>
 
-     
+      <div className="absolute bottom-15">
+        <div className="relative overflow-hidden w-xs lg:w-xl max-w-lg h-10">
+          <div className="absolute inset-y-0 left-0 w-30 bg-gradient-to-l from-transparent to-black z-20 pointer-events-none" />
+          <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none" />
 
-<div className="absolute bottom-15">
-  <div className="relative overflow-hidden w-full max-w-lg h-10">
+          <div className="marquee inline-flex whitespace-nowrap">
+            {[...Array(4)].map((_, i) => (
+              <React.Fragment key={i}>
+                {logos.map((logo, index) => (
+                  <img
+                    key={`${i}-${index}`}
+                    className="w-28 h-8 px-6 opacity-90 hover:opacity-100 transition-opacity"
+                    src={logo.src}
+                    alt={logo.alt}
+                  />
+                ))}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+      </div>
 
-{/* <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to- from-white/10 to-transparent z-20 pointer-events-none" />
-<div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white/90 to-transparent z-20 pointer-events-none" /> */}
-
-    
-    <div className="marquee inline-flex whitespace-nowrap">
-      {[...Array(4)].map((_, i) => (
-        <React.Fragment key={i}>
-          {logos.map((logo, index) => (
-            <img
-              key={`${i}-${index}`}
-              className="w-28 h-8 px-6 opacity-90 hover:opacity-100 transition-opacity"
-              src={logo.src}
-              alt={logo.alt}
-            />
-          ))}
-        </React.Fragment>
-      ))}
-    </div>
-  </div>
-</div>
-
-<style>{`
+      <style>{`
   @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
