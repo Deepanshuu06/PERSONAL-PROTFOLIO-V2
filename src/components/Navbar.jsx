@@ -43,7 +43,7 @@ function Navbar() {
             {personalDetails.name}
           </h1>
         </Link>
-        <Link to={"/"} className="lg:hidden">
+        <Link to={"/"} onClick={()=>toggleMobileMenu()} className="lg:hidden">
           <h1 className="font-bold text-xl cursor-pointer">
             {personalDetails.name.split(" ")[0]}
           </h1>

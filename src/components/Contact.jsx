@@ -63,18 +63,16 @@ function Contact() {
 
               <div>
                 <label
-                  htmlFor="company_name"
+                  htmlFor="message"
                   className="block text-sm font-medium text-gray-200"
                 >
-                  Company Name
+                  Message
                 </label>
-                <input
-                  className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none "
-                  type="text"
-                  name="Company_Name"
-                  id="company_name"
-                  placeholder="Awesome Inc."
-                />
+                <textarea 
+                className="mt-1 w-full h-25 px-4 py-2 border border-gray-300 rounded-md focus:outline-none "
+                name="Message"
+                id="message"
+                ></textarea>
               </div>
 
               <button
