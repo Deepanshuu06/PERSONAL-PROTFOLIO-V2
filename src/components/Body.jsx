@@ -10,12 +10,17 @@ import Education from "./Education";
 function Body() {
   return (
     <>
+
+    <div>
+
+    
       <Hero />
       <IntroSection />
       <SocialLinks />
       <Marquee />
       <Education />
       <About />
+      </div>
     </>
   );
 }

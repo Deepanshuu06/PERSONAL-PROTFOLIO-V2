@@ -65,7 +65,7 @@ function Contact() {
   return (
     <>
       <div
-        className={`${styles.paddingX} min-h-screen w-screen p-10 lg:pt-20 flex flex-col  lg:flex-row justify-between gap-10`}
+        className={`${styles.paddingX} min-h-screen p-10 lg:pt-20 flex flex-col  lg:flex-row justify-between gap-10`}
       >
         {/* Left Div */}
         <div className="lg:w-1/2 w-full  h-full flex flex-col gap-5 py-8 lg:py-15 items-center lg:items-start">

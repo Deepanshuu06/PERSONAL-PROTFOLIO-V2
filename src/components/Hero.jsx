@@ -39,8 +39,9 @@ function Hero() {
 
   return (
     <div
-      className={`min-h-screen min-w-screen ${styles.paddingX} mx-auto flex flex-col items-center  lg:justify-center `}
+      className={`min-h-screen ${styles.paddingX} mx-auto flex flex-col items-center lg:justify-center `}
     >
+      {/* Hero */}
       <div className="items-center flex flex-col pt-48 lg:pt-0  ">
         <div className="items-center flex flex-col">
           <h1
@@ -62,7 +63,7 @@ function Hero() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <p className="flex flex-col justify-center items-center text-center mt-9">
+          <p className="flex flex-col justify-center items-center text-center mt-10">
             My goal is to write maintainable
             <br />
             clean code to build scalable and efficient applications
@@ -77,7 +78,9 @@ function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-15">
+      {/* marquee */}
+
+      <div className=" mt-auto absolute bottom-20  ">
         <div className="relative overflow-hidden w-xs lg:w-xl max-w-lg h-10">
           <div className="absolute inset-y-0 left-0 w-30 bg-gradient-to-l from-transparent to-black z-20 pointer-events-none" />
           <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none" />

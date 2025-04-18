@@ -7,9 +7,10 @@ import { Link } from "react-router";
 function IntroSection() {
   return (
     <div
-      className={`min-h-[60vh] min-w-screen ${styles.paddingX} relative  flex lg:flex-row flex-col  justify-around items-stretch gap-10 mt-0 lg:mt-15`}
+      className={` ${styles.paddingX} relative  flex lg:flex-row flex-col  justify-around items-stretch gap-10 mt-0 lg:mt-15`}
     >
       {/* Left Section */}
+
       <div className="w-[100%] lg:w-[70%] bg-white text-black rounded-3xl p-6 flex flex-col justify-between">
         <div>
           <h1 className=" text-2xl lg:text-5xl font-bold leading-snug mb-6">

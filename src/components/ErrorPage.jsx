@@ -5,7 +5,7 @@ function ErrorPage() {
   const navigate = useNavigate();
 
   return (
-    <div className='h-screen w-screen bg-black text-white flex flex-col items-center justify-center px-4'>
+    <div className='h-screen  bg-black text-white flex flex-col items-center justify-center px-4'>
       <img 
         src='https://cdn-icons-png.flaticon.com/512/2622/2622615.png' 
         alt='Under Construction' 

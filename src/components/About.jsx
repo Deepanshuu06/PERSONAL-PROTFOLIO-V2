@@ -6,7 +6,7 @@ function About() {
   return (
     // CDEA68
     <div
-      className={`w-full py-20 rounded-t-4xl  ${styles.paddingX} text-white flex flex-col gap-10 mt-9`}
+      className={`w-full py-20  min-h-screen rounded-t-4xl  ${styles.paddingX} text-white flex flex-col gap-10 mt-9`}
     >
       <h1 className="text-4xl text-center lg:text-start ">
         {ABOUT_CONTENT.intro}
@@ -20,7 +20,7 @@ function About() {
               <li className="flex gap-3" key={index}>
                 <span className="text-2xl mt-1">•</span>
                 <div>
-                  <h3 className="font-semibold text-lg md:text-xl">
+                  <h3 className="font-semibold text-lg text-[5vw] md:text-xl">
                     {service.title}
                   </h3>
                   <p className="mt-1">{service.description}</p>
@@ -29,12 +29,12 @@ function About() {
             ))}
           </ul>
         </div>
-        <div className="w-[60%]">
-          <div className="justify-center flex">
+        <div className=" w-[100%] lg:w-[60%]">
+          <div className="justify-center flex  ">
             <img
               src={DeveloperIllustration[Math.floor(Math.random() * 5)]}
               alt="Web development illustration"
-              className="w-[30vw]"
+              className=" h-[75vh]  "
               loading="lazy"
             />
           </div>

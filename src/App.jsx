@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 
+// Components
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";
 import Eyes from "./components/Eyes";
@@ -14,7 +14,6 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import About from "./components/About";
 
-// Layout with Navbar + nested routes
 const RootLayout = () => {
   const scrollRef = useRef(null);
 
@@ -23,18 +22,27 @@ const RootLayout = () => {
       el: scrollRef.current,
       smooth: true,
       lerp: 0.075,
+      multiplier: 0.8,
     });
 
-    return () => {
-      if (scroll) scroll.destroy();
-    };
+    return () => scroll.destroy();
   }, []);
 
   return (
-    <div data-scroll-container ref={scrollRef} className="bg-black min-h-screen text-white">
-      <Navbar />
+    <div 
+      data-scroll-container 
+      ref={scrollRef} 
+      className="bg-black min-h-screen text-white flex flex-col"
+    >
       <Toaster />
-      <Outlet />
+      <Navbar />
+      
+      {/* Centered content container */}
+      <div className="flex-grow w-full flex flex-col items-center">
+        <div className="w-full max-w-[1400px] md:px-8">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };

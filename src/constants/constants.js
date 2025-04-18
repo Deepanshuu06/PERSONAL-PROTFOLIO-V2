@@ -223,7 +223,7 @@ const SocialLinkList = [
   },
   {
     name: "Instagram",
-    link: "",
+    link: "https://www.instagram.com/deepanshuu_06/",
     image:
       "https://res.cloudinary.com/deepanshu06/image/upload/v1744962746/instagram_iosvmz.png",
     color: "",
@@ -315,8 +315,8 @@ const DeveloperIllustration = [
   "https://res.cloudinary.com/deepanshu06/image/upload/v1744972228/dev2-removebg_socch5.png",
   "https://res.cloudinary.com/deepanshu06/image/upload/v1744804232/image-removebg_nywpjg.png",
   "https://res.cloudinary.com/deepanshu06/image/upload/v1744972321/image_ss9rpu.png",
-  "https://res.cloudinary.com/deepanshu06/image/upload/v1744975016/devloper_asraoo.png",
-  "https://res.cloudinary.com/deepanshu06/image/upload/v1744975327/devloperv2_b5rgpa.png"
+  "https://res.cloudinary.com/deepanshu06/image/upload/v1744993105/devloper-removebg_bc2por.png",
+  "https://res.cloudinary.com/deepanshu06/image/upload/v1744993247/devloperv2-removebg_auydsk.png"
 ];
 
 export {
