@@ -34,7 +34,7 @@ function About() {
             <img
               src={DeveloperIllustration[Math.floor(Math.random() * 5)]}
               alt="Web development illustration"
-              className=" h-[75vh]  "
+              className=" h-[45vh] lg:h-[75vh]  "
               loading="lazy"
             />
           </div>

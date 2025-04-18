@@ -26,7 +26,7 @@ function ProjectsCard({ data }) {
             <a
               href={deployedLink}
               target="_blank"
-              rel="noopener noreferrer"
+              rel=""
               className="px-4 py-2 bg-green-500 rounded-lg hover:bg-green-600 transition-colors flex items-center gap-2"
             >
               <svg
