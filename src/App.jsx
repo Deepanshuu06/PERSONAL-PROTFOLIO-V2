@@ -1,6 +1,8 @@
-// App.jsx
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";
@@ -13,17 +15,29 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 
 // Layout with Navbar + nested routes
+const RootLayout = () => {
+  const scrollRef = useRef(null);
 
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+      lerp: 0.075,
+    });
 
+    return () => {
+      if (scroll) scroll.destroy();
+    };
+  }, []);
 
-
-const RootLayout = () => (
-  <div className="bg-black min-h-screen text-white">
-    <Navbar />
-    <Toaster />
-    <Outlet />
-  </div>
-);
+  return (
+    <div data-scroll-container ref={scrollRef} className="bg-black min-h-screen text-white">
+      <Navbar />
+      <Toaster />
+      <Outlet />
+    </div>
+  );
+};
 
 const router = createBrowserRouter([
   {
@@ -35,8 +49,7 @@ const router = createBrowserRouter([
       { path: "/contact", element: <Contact /> },
       { path: "/projects", element: <Projects /> },
       { path: "/skills", element: <Skills /> },
-      { path: "/about", element: <About/> },
-
+      { path: "/about", element: <About /> },
       { path: "*", element: <Error /> },
     ],
   },

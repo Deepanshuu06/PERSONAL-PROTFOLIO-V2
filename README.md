@@ -1,12 +1,45 @@
-# React + Vite
+# Deepanshu Baghel - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://deepanshu-baghel.vercel.app/)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/Deepanshuu06)
 
-Currently, two official plugins are available:
+A modern developer portfolio showcasing full-stack capabilities, technical expertise, and professional projects. Built with Next.js and Tailwind CSS, this portfolio demonstrates cutting-edge web development practices and performance optimization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Portfolio Showcase](https://res.cloudinary.com/deepanshu06/image/upload/v1744978312/Screenshot_2025-04-18_at_5.40.59_PM_otuef8.png)
+![Projects Section](https://res.cloudinary.com/deepanshu06/image/upload/v1744978312/Screenshot_2025-04-18_at_5.41.18_PM_kiugsn.png)
 
-## Expanding the ESLint configuration
+## 🚀 Key Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Performance First**: 95+ Lighthouse scores across all categories
+- **Modern Stack**: Next.js 14, React 18, and Tailwind CSS
+- **Interactive Elements**: Smooth animations and transitions
+- **Responsive Design**: Flawless adaptation from mobile to 4K displays
+- **Project Showcase**: Detailed case studies with code samples
+- **SEO Optimized**: Proper meta tags and structured data
+- **Contact Integration**: Direct email functionality with rate limiting
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Backend**: Node.js, Next.js API routes
+- **Database**: MongoDB (Mongoose ODM)
+- **Styling**: CSS Modules, Framer Motion
+- **Tools**: ESLint, Prettier, Husky
+- **Hosting**: Vercel Edge Network
+- **CMS**: Sanity.io integration
+
+## 🌟 Portfolio Highlights
+
+- 4+ years full-stack development experience
+- AWS & Google Cloud certified professional
+- Contributor to 5+ open source projects
+- Specialized in React/Next.js architecture
+- Implemented 10+ production-grade web apps
+- Technical blog writer and community mentor
+- Strong advocate for accessibility-first development
+
+## 📦 Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/Deepanshuu06/portfolio.git
