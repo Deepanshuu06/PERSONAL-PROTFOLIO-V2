@@ -5,8 +5,7 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 function IntroSection() {
   return (
     <div
-   
-      className={`min-h-[80vh] min-w-screen ${styles.paddingX} relative  flex lg:flex-row flex-col  justify-around items-stretch gap-10 mt-0 lg:mt-15`}
+      className={`min-h-[60vh] min-w-screen ${styles.paddingX} relative  flex lg:flex-row flex-col  justify-around items-stretch gap-10 mt-0 lg:mt-15`}
     >
       {/* Left Section */}
       <div className="w-[100%] lg:w-[70%] bg-white text-black rounded-3xl p-6 flex flex-col justify-between">
@@ -14,12 +13,13 @@ function IntroSection() {
           <h1 className=" text-2xl lg:text-5xl font-bold leading-snug mb-6">
             Hi, I'm a Developer Building High-Quality Web Experiences
           </h1>
-
+        </div>
+        <div>
           <p className="font-mono text-sm mb-4">
             I specialize in building modern, fast, and scalable websites using:
           </p>
 
-          <ul className="list-disc flex flex-col gap-2 font-semibold pl-4 text-base">
+          <ul className="list-disc flex flex-col gap-3 font-semibold pl-4 text-base">
             <li>React and Next.js for dynamic and responsive web apps</li>
             <li>Clean UI/UX design principles for user-friendly experiences</li>
             <li>Optimized performance and SEO-ready development</li>

@@ -1,42 +1,88 @@
+import { webPojectPicture } from "../assets/asset";
 
 export const personalDetails = {
-    name:"Deepanshu Baghel"
-}
-  
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-      path:"/about"
-    },
-    {
-      id: "work",
-      title: "Work",
-       path:"/work"
-    },
-    {
-      id: "contact",
-      title: "Contact",
-       path:"/contact"
-    },
-  ];
+  name: "Deepanshu Baghel",
+};
 
-  export const logos = [
-    { src: "https://images.ctfassets.net/23aumh6u8s0i/6pjUKboBuFLvCKkE3esaFA/5f2101d6d2add5c615db5e98a553fc44/nextjs.jpeg", alt: "Next.js" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", alt: "React" },
-    { src: "https://cdn.worldvectorlogo.com/logos/redux.svg", alt: "Redux Toolkit" },
-    { src: "https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg", alt: "MongoDB" },
-    { src: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png", alt: "HTML5" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg", alt: "CSS3" },
-    { src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg", alt: "Tailwind CSS" },
-    { src: "https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg", alt: "Git" },
-    { src: "https://www.vectorlogo.zone/logos/github/github-tile.svg", alt: "GitHub" },
-    { src: "https://www.vectorlogo.zone/logos/linux/linux-ar21.svg", alt: "Linux" },
-    { src: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg", alt: "Postman" },
-    { src: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg", alt: "JavaScript" },
-    { src: "https://www.vectorlogo.zone/logos/nestjs/nestjs-ar21.svg", alt: "NestJS" },
-  ];
-  
+export const navLinks = [
+  {
+    id: "projects",
+    title: "projects",
+    path: "/projects",
+  },
+
+  {
+    id: "skills",
+    title: "skills",
+    path: "/skills",
+  },
+  {
+    id: "about",
+    title: "About",
+    path: "/about",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+    path: "/contact",
+  },
+];
+
+export const logos = [
+  {
+    src: "https://images.ctfassets.net/23aumh6u8s0i/6pjUKboBuFLvCKkE3esaFA/5f2101d6d2add5c615db5e98a553fc44/nextjs.jpeg",
+    alt: "Next.js",
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    alt: "React",
+  },
+  {
+    src: "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    alt: "Redux Toolkit",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg",
+    alt: "MongoDB",
+  },
+  {
+    src: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
+    alt: "HTML5",
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
+    alt: "CSS3",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    alt: "Tailwind CSS",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg",
+    alt: "Git",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/github/github-tile.svg",
+    alt: "GitHub",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/linux/linux-ar21.svg",
+    alt: "Linux",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+    alt: "Postman",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg",
+    alt: "JavaScript",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/nestjs/nestjs-ar21.svg",
+    alt: "NestJS",
+  },
+];
+
 //   const services = [
 //     {
 //       title: "Web Developer",
@@ -55,7 +101,6 @@ export const personalDetails = {
 //       icon: creator,
 //     },
 //   ];
-  
 
 //   const experiences = [
 //     {
@@ -86,8 +131,7 @@ export const personalDetails = {
 //       ],
 //     },
 //   ];
-  
-  
+
 //   const testimonials = [
 //     {
 //       testimonial:
@@ -114,39 +158,73 @@ export const personalDetails = {
 //       image: "https://randomuser.me/api/portraits/women/6.jpg",
 //     },
 //   ];
-  
 
+const projects = [
+  {
+    name: "Food Ordering Web App (Frontend)",
+    id: "892732",
+    description:
+      "A responsive food ordering platform inspired by Swiggy, featuring real-time data integration through Swiggy's live API. Users can browse restaurants, explore menus, and place orders with ease.",
+    technologies: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+    ],
+    image:
+      "https://res.cloudinary.com/djfmulkpn/image/upload/v1744956757/Screenshot_2025-04-13_at_9.06.26_PM_avilr8.png",
+    deployedLink: "https://food-zone-mauve.vercel.app/",
+    source_code_link:
+      "https://github.com/Deepanshuu06/food_ordering_web_frontend.git",
+  },
+  {
+    name: "Anonymous Confessions App",
+    id: "726172",
+    description:
+      "A social platform where users can anonymously share their thoughts and confessions. Built with privacy in mind, the app ensures no identity tracking while offering a clean, modern UI.",
+    technologies: [
+      { name: "Next.js", color: "orange-text-gradient" },
+      { name: "Tailwind CSS", color: "blue-text-gradient" },
+    ],
+    image:
+      "https://res.cloudinary.com/djfmulkpn/image/upload/v1744956717/Screenshot_2025-04-13_at_9.06.07_PM_hfipsk.png",
+    deployedLink: "https://anonymous-confessions-xi.vercel.app/u/deepanshu",
+    source_code_link:
+      "https://github.com/Deepanshuu06/anonymous_confessions.git",
+  },
+];
 
-  
-// const projects = [
-//   {
-//     name: "Food Ordering Web App (Frontend)",
-//     description:
-//       "A responsive food ordering platform inspired by Swiggy, featuring real-time data integration through Swiggy's live API. Users can browse restaurants, explore menus, and place orders with ease.",
-//     tags: [
-//       { name: "React", color: "blue-text-gradient" },
-//       { name: "Redux", color: "blue-text-gradient" },
-//       { name: "Tailwind CSS", color: "pink-text-gradient" },
-//     ],
-//     image: foodApp,
-//     deployedLink:"https://food-zone-mauve.vercel.app/",
-//     source_code_link:
-//       "https://github.com/Deepanshuu06/food_ordering_web_frontend.git",
-//   },
-//   {
-//     name: "Anonymous Confessions App",
-//     description:
-//       "A social platform where users can anonymously share their thoughts and confessions. Built with privacy in mind, the app ensures no identity tracking while offering a clean, modern UI.",
-//     tags: [
-//       { name: "Next.js", color: "orange-text-gradient" },
-//       { name: "Tailwind CSS", color: "blue-text-gradient" },
-//     ],
-//     image: confession,
-//     deployedLink:"https://anonymous-confessions-xi.vercel.app/u/deepanshu",
-//     source_code_link:
-//       "https://github.com/Deepanshuu06/anonymous_confessions.git",
-//   },
-// ];
+const minorProjects = [
+  {
+    name: "Food Ordering Web App (Frontend)",
+    id: "892732",
+    description:
+      "A responsive food ordering platform inspired by Swiggy, featuring real-time data integration through Swiggy's live API. Users can browse restaurants, explore menus, and place orders with ease.",
+    technologies: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+    ],
+    image:
+      "https://res.cloudinary.com/djfmulkpn/image/upload/v1744956757/Screenshot_2025-04-13_at_9.06.26_PM_avilr8.png",
+    deployedLink: "https://food-zone-mauve.vercel.app/",
+    source_code_link:
+      "https://github.com/Deepanshuu06/food_ordering_web_frontend.git",
+  },
+  {
+    name: "Anonymous Confessions App",
+    id: "726172",
+    description:
+      "A social platform where users can anonymously share their thoughts and confessions. Built with privacy in mind, the app ensures no identity tracking while offering a clean, modern UI.",
+    technologies: [
+      { name: "Next.js", color: "orange-text-gradient" },
+      { name: "Tailwind CSS", color: "blue-text-gradient" },
+    ],
+    image:
+      "https://res.cloudinary.com/djfmulkpn/image/upload/v1744956717/Screenshot_2025-04-13_at_9.06.07_PM_hfipsk.png",
+    deployedLink: "https://anonymous-confessions-xi.vercel.app/u/deepanshu",
+    source_code_link:
+      "https://github.com/Deepanshuu06/anonymous_confessions.git",
+  },
+];
 
-  
-//   export { services, technologies, experiences, testimonials, projects };
+export { projects, minorProjects };

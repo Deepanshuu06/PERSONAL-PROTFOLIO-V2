@@ -43,7 +43,7 @@ function Navbar() {
             {personalDetails.name}
           </h1>
         </Link>
-        <Link to={"/"} onClick={()=>toggleMobileMenu()} className="lg:hidden">
+        <Link to={"/"} onClick={()=>setIsMobileMenuOpen(false)} className="lg:hidden">
           <h1 className="font-bold text-xl cursor-pointer">
             {personalDetails.name.split(" ")[0]}
           </h1>
@@ -55,7 +55,7 @@ function Navbar() {
            <Link to={link.path}>
             <h3
               key={link.id}
-              className="cursor-pointer uppercase text-sm text-white hover:text-green transition-colors duration-300"
+              className={`cursor-pointer uppercase text-sm text-white hover:text-green transition-colors duration-300 ${link.id == "contact" && "hidden"  }`}
             >
               {link.title}
             </h3>

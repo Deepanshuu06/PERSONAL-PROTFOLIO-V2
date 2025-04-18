@@ -1,9 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import { styles } from "../style";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 function Contact() {
+  const [formdata, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setFormData({
+      ...formdata,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formdata.name,
+          to_name: "Deepanshu Baghel",
+          from_email: formdata.email,
+          to_email: "gamerztech423@gmail.com",
+          name: formdata.name,
+          email: formdata.email,
+          message: formdata.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setIsLoading(false);
+          toast.success("Thank you. I will get back to you as soon as possible.")
+
+
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setIsLoading(false);
+          console.error(error);
+          toast.error("Ahh, something went wrong. Please try again.")
+
+        }
+      );
+  };
+
   return (
     <>
       <div
@@ -28,7 +86,7 @@ function Contact() {
             <h1 className="text-4xl font-semibold py-5 hover:pl-2 ease-in duration-500">
               Enter Your <br /> Contact Details
             </h1>
-            <form action="" className="space-y-7 ">
+            <form onSubmit={handleSubmit} className="space-y-7 ">
               <div>
                 <label
                   htmlFor="name"
@@ -39,8 +97,10 @@ function Contact() {
                 <input
                   className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none"
                   type="text"
-                  name="Name"
+                  name="name"
                   id="name"
+                  value={formdata.name}
+                  onChange={handleChange}
                   placeholder="John Doe"
                 />
               </div>
@@ -55,9 +115,11 @@ function Contact() {
                 <input
                   className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none "
                   type="email"
-                  name="Email"
+                  name="email"
                   id="email"
                   placeholder="you@example.com"
+                  value={formdata.email}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -68,24 +130,29 @@ function Contact() {
                 >
                   Message
                 </label>
-                <textarea 
-                className="mt-1 w-full h-25 px-4 py-2 border border-gray-300 rounded-md focus:outline-none "
-                name="Message"
-                id="message"
+                <textarea
+                  className="mt-1 w-full h-25 px-4 py-2 border border-gray-300 rounded-md focus:outline-none "
+                  name="message"
+                  id="message"
+                  value={formdata.message}
+                  onChange={handleChange}
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="mt-4 w-full bg-green-700 text-white py-2 rounded-md hover:bg-green-800 transition cursor-pointer"
+                disabled={isLoading}
+                className={`mt-4 w-full py-2 rounded-md transition cursor-pointer ${
+                  isLoading ? "bg-gray-500" : "bg-green-700 hover:bg-green-800"
+                }`}
               >
-                Submit
+                {isLoading ? "Sending..." : "Submit"}
               </button>
             </form>
+           
           </div>
         </div>
       </div>
-    
     </>
   );
 }

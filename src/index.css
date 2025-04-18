@@ -5,8 +5,8 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
-    color-scheme: dark;
-    /* background-color: black; */
+    color-scheme:dark;
+
 
   }
   @theme {
