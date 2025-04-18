@@ -3,7 +3,7 @@ import { styles } from "../style";
 import { FaCode } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { logos } from "../constants/constants";
+import { logos, personalDetails } from "../constants/constants";
 
 function Hero() {
   // Refs for animating elements
@@ -47,7 +47,7 @@ function Hero() {
             ref={nameRef}
             className=" text-3xl lg:text-8xl font-extrabold uppercase"
           >
-            Deepanshu Baghel
+            {personalDetails.name}
           </h1>
           <h1
             ref={titleRef}
@@ -68,9 +68,12 @@ function Hero() {
             clean code to build scalable and efficient applications
           </p>
 
-          <button className="bg-green px-4 py-2 rounded-3xl mt-5 self-center w-fit cursor-pointer">
+          <a
+            className="bg-green px-4 py-2 rounded-3xl mt-5 self-center w-fit cursor-pointer"
+            href={personalDetails.resumeLink}
+          >
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
 

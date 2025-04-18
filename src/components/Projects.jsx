@@ -15,15 +15,15 @@ function Projects() {
         </h1>
       </div>
       <div className="w-full grid  grid-cols-1 lg:grid-cols-3 gap-10 items-start justify-items-center">
-        {projects.map((project) => (
-          <ProjectsCard data={project} />
+        {projects.map((project , index) => (
+          <ProjectsCard  key={index} data={project} />
         ))}
       </div>
       <div className="flex flex-col gap-10">
         <h1 className="font-bold text-2xl lg:text-4xl">Minor Projects</h1>
         <div className="w-full grid  grid-cols-1 lg:grid-cols-3 gap-10 items-start justify-items-center">
-          {projects.map((project) => (
-            <ProjectsCard data={project} />
+          {minorProjects.map((project , index) => (
+            <ProjectsCard key={index} data={project} />
           ))}
         </div>
       </div>

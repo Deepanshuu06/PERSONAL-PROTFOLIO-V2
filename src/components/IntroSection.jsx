@@ -1,6 +1,8 @@
 import React from "react";
 import { styles } from "../style";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import { introContent, testimonialContent } from "../constants/constants";
+import { Link } from "react-router";
 
 function IntroSection() {
   return (
@@ -11,24 +13,24 @@ function IntroSection() {
       <div className="w-[100%] lg:w-[70%] bg-white text-black rounded-3xl p-6 flex flex-col justify-between">
         <div>
           <h1 className=" text-2xl lg:text-5xl font-bold leading-snug mb-6">
-            Hi, I'm a Developer Building High-Quality Web Experiences
+            {introContent.title}
           </h1>
         </div>
         <div>
-          <p className="font-mono text-sm mb-4">
-            I specialize in building modern, fast, and scalable websites using:
-          </p>
+          <p className="font-mono text-sm mb-4">{introContent.description}</p>
 
           <ul className="list-disc flex flex-col gap-3 font-semibold pl-4 text-base">
-            <li>React and Next.js for dynamic and responsive web apps</li>
-            <li>Clean UI/UX design principles for user-friendly experiences</li>
-            <li>Optimized performance and SEO-ready development</li>
+            {introContent.features.map((feature , index) => (
+              <li key={index}>{feature}</li>
+            ))}
           </ul>
         </div>
 
-        <button className="bg-green-600 hover:bg-green-700 transition-all py-4 text-white w-full rounded-3xl cursor-pointer font-bold mt-6">
-          LET'S BUILD SOMETHING TOGETHER
-        </button>
+        <Link to={"/contact"}>
+          <button className="bg-green-600 hover:bg-green-700 transition-all py-4 text-white w-full rounded-3xl cursor-pointer font-bold mt-6 uppercase">
+            {introContent.buttonText}
+          </button>
+        </Link>
       </div>
 
       {/* Right Section */}
@@ -41,7 +43,7 @@ function IntroSection() {
 
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/djfmulkpn/image/upload/v1744795189/IMG_1098_3_sgc1kj.jpg"
+                src={testimonialContent.imageUrl}
                 alt="testimonial"
                 className="rounded-full w-12 h-12 object-cover mb-4"
               />
@@ -50,25 +52,24 @@ function IntroSection() {
           </div>
 
           <h1 className="text-xl font-semibold leading-relaxed">
-            I’m passionate about crafting clean, efficient code and bringing
-            ideas to life through thoughtful design and powerful development.
+            {testimonialContent.quote}
           </h1>
 
           <h2 className="text-sm font-light mt-2">
-            From personal projects to business websites — I’ve got you covered.
+            {testimonialContent.subQuote}
           </h2>
 
-          <p className="italic text-sm mt-4">
-            — Deepanshu Baghel, Web Developer
-          </p>
+          <p className="italic text-sm mt-4">{testimonialContent.author}</p>
         </div>
 
-        <button className="bg-white text-green-600 hover:text-green-700 font-bold py-4 w-full rounded-3xl cursor-pointer transition-all mt-6">
-          VIEW MY WORK
-        </button>
+        <Link to={"/projects"}>
+          <button className="bg-white text-green-600 hover:text-green-700 font-bold py-4 w-full rounded-3xl cursor-pointer transition-all mt-6">
+            {testimonialContent.buttonText}
+          </button>
+        </Link>
       </div>
 
-      <style jsx>{`
+      <style >{`
         @keyframes gradientAnimation {
           0% {
             background-position: 90% 50%;

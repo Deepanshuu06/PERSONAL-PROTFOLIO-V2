@@ -10,6 +10,8 @@ import Hero from "./Hero";
 import IntroSection from "./IntroSection";
 import Marquee from "./Marquee";
 import About from "./About";
+import SocialLinks from "./SocialLinks";
+import Education from "./Education";
 
 function Body() {
      const scrollRef = useRef(null);
@@ -29,7 +31,9 @@ function Body() {
     <div data-scroll-container ref={scrollRef} className="bg-black">
     <Hero />
     <IntroSection />
+    <SocialLinks/>
     <Marquee />
+    <Education/>
     <About />
   </div>
   )

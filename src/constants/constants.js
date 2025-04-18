@@ -1,9 +1,3 @@
-import { webPojectPicture } from "../assets/asset";
-
-export const personalDetails = {
-  name: "Deepanshu Baghel",
-};
-
 export const navLinks = [
   {
     id: "projects",
@@ -27,6 +21,11 @@ export const navLinks = [
     path: "/contact",
   },
 ];
+
+export const personalDetails = {
+  name: "Deepanshu Baghel",
+  resumeLink: "",
+};
 
 export const logos = [
   {
@@ -83,81 +82,55 @@ export const logos = [
   },
 ];
 
-//   const services = [
-//     {
-//       title: "Web Developer",
-//       icon: web,
-//     },
-//     {
-//       title: "Backend Developer",
-//       icon: backend,
-//     },
-//     {
-//       title: "Blogger",
-//       icon: mobile,
-//     },
-//     {
-//       title: "Content Creator",
-//       icon: creator,
-//     },
-//   ];
+const introContent = {
+  title: "Hi, I'm a Developer Building High-Quality Web Experiences",
+  description:
+    "I specialize in building modern, fast, and scalable websites using:",
+  features: [
+    "React and Next.js for dynamic and responsive web apps",
+    "Clean UI/UX design principles for user-friendly experiences",
+    "Optimized performance and SEO-ready development",
+  ],
+  buttonText: "LET'S BUILD SOMETHING TOGETHER",
+};
+const testimonialContent = {
+  quote:
+    "I’m passionate about crafting clean, efficient code and bringing ideas to life through thoughtful design and powerful development.",
+  subQuote:
+    "From personal projects to business websites — I’ve got you covered.",
+  author: "— Deepanshu Baghel, Web Developer",
+  buttonText: "VIEW MY WORK",
+  imageUrl:
+    "https://res.cloudinary.com/deepanshu06/image/upload/v1744795189/IMG_1098_3_sgc1kj.jpg",
+};
 
-//   const experiences = [
-//     {
-//       title: "Frontend Developer",
-//       company_name: "Self-Taught / Independent",
-//       iconBg: "#F9A826",
-//       icon:frontendLogo,
-//       date: "Ongoing",
-//       points: [
-//         "Gained in-depth experience with modern frontend frameworks including React and Next.js.",
-//         "Built and deployed responsive, user-friendly web applications using HTML, CSS, JavaScript, and Tailwind CSS.",
-//         "Applied best practices in component-based architecture, state management (Redux), and API integration.",
-//         "Continuously learning new tools and libraries to stay updated with industry trends and improve development workflows.",
-//         "Engaging in open-source contributions and personal projects to refine problem-solving and collaboration skills.",
-//       ],
-//     },
-//     {
-//       title: "Bachelor of Computer Applications (BCA) Student",
-//       company_name: "Shri Vaishnav Vidyapeeth Viswavidyalaya",
-//       iconBg: "#5E63B6",
-//       icon:collegeLogo,
-//       date: "Expected Graduation: May 2025",
-//       points: [
-//         "Pursuing a degree in Computer Applications with a focus on software development and web technologies.",
-//         "Studying core subjects such as data structures, algorithms, object-oriented programming, and databases.",
-//         "Participating in coding challenges, hackathons, and technical workshops to enhance practical skills.",
-//         "Collaborating with peers on academic and extracurricular tech projects to simulate real-world development environments.",
-//       ],
-//     },
-//   ];
-
-//   const testimonials = [
-//     {
-//       testimonial:
-//         "Working with Deepanshu has been a fantastic experience. His attention to detail and dedication to creating seamless user experiences is truly commendable. He consistently delivers high-quality work and always meets deadlines.",
-//       name: "Priya Patel",
-//       designation: "Project Manager",
-//       company: "TechHigh Solutions",
-//       image: "https://randomuser.me/api/portraits/women/4.jpg",
-//     },
-//     {
-//       testimonial:
-//         "Deepanshu is a highly skilled frontend developer with a strong command of React and Next.js. His ability to solve complex UI challenges and write clean, efficient code makes him a valuable asset to any development team.",
-//       name: "Rahul Gupta",
-//       designation: "Lead Developer",
-//       company: "PQR Tech",
-//       image: "https://randomuser.me/api/portraits/men/5.jpg",
-//     },
-//     {
-//       testimonial:
-//         "Deepanshu brought our vision to life with a stunning frontend interface. His communication skills, creative approach, and user-first mindset made the collaboration smooth and successful.",
-//       name: "Sneha Sharma",
-//       designation: "Marketing Manager",
-//       company: "LMN Enterprises",
-//       image: "https://randomuser.me/api/portraits/women/6.jpg",
-//     },
-//   ];
+const educationData = [
+  {
+    degree: "Bachelor of Computer Applications (BCA)",
+    institution: "Shri Vaishnav Institute of Computer Application",
+    duration: "2022 - 2025",
+    coursework: {
+      core: [
+        "Advanced Web Development",
+        "Database Systems & SQL",
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "Computer Architecture",
+      ],
+      electives: [
+        "Cloud Computing Fundamentals",
+        "Mobile App Development",
+        "UI/UX Design Principles",
+        "Cyber Security Basics",
+      ],
+    },
+  },
+  {
+    degree: "Higher Secondary Education",
+    institution: "Gyan Sagar Anurag School",
+    duration: "2020 - 2022",
+  },
+];
 
 const projects = [
   {
@@ -171,7 +144,7 @@ const projects = [
       { name: "Tailwind CSS", color: "pink-text-gradient" },
     ],
     image:
-      "https://res.cloudinary.com/djfmulkpn/image/upload/v1744956757/Screenshot_2025-04-13_at_9.06.26_PM_avilr8.png",
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744956757/Screenshot_2025-04-13_at_9.06.26_PM_avilr8.png",
     deployedLink: "https://food-zone-mauve.vercel.app/",
     source_code_link:
       "https://github.com/Deepanshuu06/food_ordering_web_frontend.git",
@@ -186,7 +159,7 @@ const projects = [
       { name: "Tailwind CSS", color: "blue-text-gradient" },
     ],
     image:
-      "https://res.cloudinary.com/djfmulkpn/image/upload/v1744956717/Screenshot_2025-04-13_at_9.06.07_PM_hfipsk.png",
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744956717/Screenshot_2025-04-13_at_9.06.07_PM_hfipsk.png",
     deployedLink: "https://anonymous-confessions-xi.vercel.app/u/deepanshu",
     source_code_link:
       "https://github.com/Deepanshuu06/anonymous_confessions.git",
@@ -195,36 +168,164 @@ const projects = [
 
 const minorProjects = [
   {
-    name: "Food Ordering Web App (Frontend)",
-    id: "892732",
-    description:
-      "A responsive food ordering platform inspired by Swiggy, featuring real-time data integration through Swiggy's live API. Users can browse restaurants, explore menus, and place orders with ease.",
+    name: "Coding Shuttle",
+    id: "438221",
+    description: "A pixel-perfect clone of the Coding Shuttle homepage, built using HTML, CSS, and JavaScript to practice layout and responsive design.",
     technologies: [
-      { name: "React", color: "blue-text-gradient" },
-      { name: "Redux", color: "blue-text-gradient" },
-      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "HTML", color: "blue-text-gradient" },
+      { name: "CSS", color: "blue-text-gradient" },
+      { name: "Javascript", color: "pink-text-gradient" },
     ],
     image:
-      "https://res.cloudinary.com/djfmulkpn/image/upload/v1744956757/Screenshot_2025-04-13_at_9.06.26_PM_avilr8.png",
-    deployedLink: "https://food-zone-mauve.vercel.app/",
-    source_code_link:
-      "https://github.com/Deepanshuu06/food_ordering_web_frontend.git",
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744973105/Screenshot_2025-04-18_at_4.14.49_PM_in8xoq.png",
+    deployedLink: "https://coding-shuttle.netlify.app/",
+    source_code_link: "https://github.com/Deepanshuu06/coding-shuttle-clone",
   },
   {
-    name: "Anonymous Confessions App",
-    id: "726172",
-    description:
-      "A social platform where users can anonymously share their thoughts and confessions. Built with privacy in mind, the app ensures no identity tracking while offering a clean, modern UI.",
+    name: "Fenta Landing Page",
+    id: "724572",
+    description: "A sleek and modern landing page for a fictional brand, built with Next.js and styled using Tailwind CSS for responsive, clean UI.",
     technologies: [
-      { name: "Next.js", color: "orange-text-gradient" },
-      { name: "Tailwind CSS", color: "blue-text-gradient" },
+      { name: "HTML", color: "orange-text-gradient" },
+      { name: "CSS", color: "blue-text-gradient" },
+      { name: "GSAP", color: "blue-text-gradient" },
     ],
     image:
-      "https://res.cloudinary.com/djfmulkpn/image/upload/v1744956717/Screenshot_2025-04-13_at_9.06.07_PM_hfipsk.png",
-    deployedLink: "https://anonymous-confessions-xi.vercel.app/u/deepanshu",
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744973479/Screenshot_2025-04-18_at_4.21.07_PM_dn3wav.png",
+    deployedLink: "https://fenta-landingpage.netlify.app/",
     source_code_link:
-      "https://github.com/Deepanshuu06/anonymous_confessions.git",
+      "https://github.com/Deepanshuu06/Fanta_fontend",
   },
 ];
 
-export { projects, minorProjects };
+
+const SocialLinkList = [
+  {
+    name: "Github",
+    link: "https://github.com/Deepanshuu06",
+    image:
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744962745/github_ks3hgr.png",
+    color: "",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/deepanshu-baghel-b5711a249/",
+    image:
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744962746/linkedin_rpiysx.png",
+    color: "",
+  },
+  {
+    name: "X",
+    link: "https://x.com/deepanshuu06",
+    image:
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744962746/twitter-x_mnziev.png",
+    color: "",
+  },
+  {
+    name: "Instagram",
+    link: "",
+    image:
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744962746/instagram_iosvmz.png",
+    color: "",
+  },
+];
+
+const skills = [
+  {
+    name: "React.js",
+    url: "https://react.dev",
+    image: "",
+  },
+  {
+    name: "Redux Toolkit",
+    url: "https://redux-toolkit.js.org",
+    image: "",
+  },
+  {
+    name: "MongoDB",
+    url: "https://mongodb.com",
+    image: "",
+  },
+  {
+    name: "Express",
+    url: "https://expressjs.com",
+    image: "",
+  },
+  {
+    name: "Tailwind CSS",
+    url: "https://tailwindcss.com",
+    image: "",
+  },
+  {
+    name: "GSAP",
+    url: "https://greensock.com/gsap",
+    image: "",
+  },
+  {
+    name: "Git & Github",
+    url: "https://github.com",
+    image: "",
+  },
+  {
+    name: "Linux",
+    url: "https://linux.org",
+    image: "",
+  },
+  {
+    name: "Postman",
+    url: "https://postman.com",
+    image: "",
+  },
+];
+
+export const ABOUT_CONTENT = {
+  intro:
+    "My goal is simple: to help businesses and individuals bring their vision to life online — with powerful, sleek, and functional websites that truly make an impact",
+
+  services: [
+    {
+      title: "Frontend Development",
+      description:
+        "Building interactive UIs using React, Next.js, Tailwind CSS, and modern frameworks",
+    },
+    {
+      title: "Backend Integration",
+      description:
+        "Connecting frontends with REST APIs, databases (MongoDB/MySQL), and cloud services",
+    },
+    {
+      title: "Performance Optimization",
+      description:
+        "Implementing lazy loading, SEO best practices, and achieving top Lighthouse scores",
+    },
+    {
+      title: "Responsive Design",
+      description:
+        "Creating mobile-first experiences that adapt flawlessly to all devices",
+    },
+    {
+      title: "Deployment & Hosting",
+      description:
+        "Deploying to modern platforms like Vercel/Netlify or traditional cloud infrastructure",
+    },
+  ],
+};
+
+const DeveloperIllustration = [
+  "https://res.cloudinary.com/deepanshu06/image/upload/v1744972228/dev2-removebg_socch5.png",
+  "https://res.cloudinary.com/deepanshu06/image/upload/v1744804232/image-removebg_nywpjg.png",
+  "https://res.cloudinary.com/deepanshu06/image/upload/v1744972321/image_ss9rpu.png",
+  "https://res.cloudinary.com/deepanshu06/image/upload/v1744975016/devloper_asraoo.png",
+  "https://res.cloudinary.com/deepanshu06/image/upload/v1744975327/devloperv2_b5rgpa.png"
+];
+
+export {
+  introContent,
+  projects,
+  minorProjects,
+  SocialLinkList,
+  skills,
+  educationData,
+  testimonialContent,
+  DeveloperIllustration,
+};

@@ -22,9 +22,8 @@ function Navbar() {
         <div className="absolute top-16 left-0 w-full bg-black lg:hidden border-t border-gray-800">
           <div className="flex flex-col items-center gap-4 p-6">
             {navLinks.map((link) => (
-             <Link to={link.path}>
+             <Link to={link.path} key={link.id}>
               <h3
-                key={link.id}
                 className="cursor-pointer uppercase font-semibold text-white hover:text-green transition-colors duration-300"
                 onClick={()=>toggleMobileMenu()}
               >
@@ -52,9 +51,8 @@ function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-10">
           {navLinks.map((link) => (
-           <Link to={link.path}>
+           <Link to={link.path} key={link.id}>
             <h3
-              key={link.id}
               className={`cursor-pointer uppercase text-sm text-white hover:text-green transition-colors duration-300 ${link.id == "contact" && "hidden"  }`}
             >
               {link.title}
