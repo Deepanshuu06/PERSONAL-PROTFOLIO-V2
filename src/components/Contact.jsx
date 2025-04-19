@@ -25,27 +25,44 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Basic validation
+    const { name, email, message } = formdata;
+    if (!name || !email || !message) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
+
+    // Simple email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
     setIsLoading(true);
+
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: formdata.name,
+          from_name: name,
           to_name: "Deepanshu Baghel",
-          from_email: formdata.email,
+          from_email: email,
           to_email: "gamerztech423@gmail.com",
-          name: formdata.name,
-          email: formdata.email,
-          message: formdata.message,
+          name: name,
+          email: email,
+          message: message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           setIsLoading(false);
-          toast.success("Thank you. I will get back to you as soon as possible.")
-
+          toast.success(
+            "Thank you. I will get back to you as soon as possible."
+          );
 
           setFormData({
             name: "",
@@ -56,8 +73,7 @@ function Contact() {
         (error) => {
           setIsLoading(false);
           console.error(error);
-          toast.error("Ahh, something went wrong. Please try again.")
-
+          toast.error("Ahh, something went wrong. Please try again.");
         }
       );
   };
@@ -73,7 +89,7 @@ function Contact() {
             <Link to={"/"}>
               <span> Home</span>
             </Link>{" "}
-            <span>></span> <span className="text-zinc-500"> Let's Talk</span>
+            <span></span> <span className="text-zinc-500"> Let's Talk</span>
           </p>
           <h1 className=" text-2xl lg:text-6xl font-semibold text-center lg:text-start">
             Let's Create Something Epic Together
@@ -149,7 +165,6 @@ function Contact() {
                 {isLoading ? "Sending..." : "Submit"}
               </button>
             </form>
-           
           </div>
         </div>
       </div>
