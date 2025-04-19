@@ -15,6 +15,7 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import ScrollToTop from "./utils/scrollToTop";
 
+
 const RootLayout = () => {
   const scrollRef = useRef(null);
 
@@ -35,7 +36,7 @@ const RootLayout = () => {
       ref={scrollRef} 
       className="bg-black min-h-screen text-white flex flex-col"
     >
-      <ScrollToTop/>
+<ScrollToTop/>
       <Toaster />
       <Navbar />
       
