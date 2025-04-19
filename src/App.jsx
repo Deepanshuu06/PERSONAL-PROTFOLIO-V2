@@ -13,7 +13,11 @@ import { Toaster } from "react-hot-toast";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import About from "./components/About";
-import ScrollToTop from "./utils/scrollToTop";
+import useScrollToTop from "./utils/scrollToTop";
+
+
+
+
 
 
 const RootLayout = () => {
@@ -29,6 +33,7 @@ const RootLayout = () => {
 
     return () => scroll.destroy();
   }, []);
+  useScrollToTop(); 
 
   return (
     <div 
@@ -36,7 +41,7 @@ const RootLayout = () => {
       ref={scrollRef} 
       className="bg-black min-h-screen text-white flex flex-col"
     >
-<ScrollToTop/>
+usescr
       <Toaster />
       <Navbar />
       
