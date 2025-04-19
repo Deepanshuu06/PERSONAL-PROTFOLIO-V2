@@ -13,7 +13,8 @@ import { Toaster } from "react-hot-toast";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import About from "./components/About";
-import useScrollToTop from "./utils/scrollToTop";
+import useScrollToTop from "./utils/useScrollToTop";
+
 
 
 
@@ -33,7 +34,7 @@ const RootLayout = () => {
 
     return () => scroll.destroy();
   }, []);
-  useScrollToTop(); 
+useScrollToTop()
 
   return (
     <div 
