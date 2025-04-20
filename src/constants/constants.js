@@ -16,6 +16,11 @@ export const navLinks = [
     path: "/about",
   },
   {
+    id: "blogs",
+    title: "blogs",
+    path: "/blogs",
+  },
+  {
     id: "contact",
     title: "Contact",
     path: "/contact",
@@ -93,6 +98,7 @@ const introContent = {
   ],
   buttonText: "LET'S BUILD SOMETHING TOGETHER",
 };
+
 const testimonialContent = {
   quote:
     "I’m passionate about crafting clean, efficient code and bringing ideas to life through thoughtful design and powerful development.",
@@ -168,6 +174,21 @@ const projects = [
 
 const minorProjects = [
   {
+    name: "Personal Portfolio",
+    id: "724322",
+    description: "A dynamic personal portfolio website built with React and Tailwind CSS, featuring smooth animations using GSAP. It showcases my skills, projects, and experience with a modern and responsive design.",
+    technologies: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Tailwind", color: "blue-text-gradient" },
+      { name: "GSAP", color: "blue-text-gradient" },
+    ],
+    image:
+      "https://res.cloudinary.com/deepanshu06/image/upload/v1744978312/Screenshot_2025-04-18_at_5.40.59_PM_otuef8.png",
+    deployedLink: "https://deepanshu-baghel.vercel.app/",
+    source_code_link:
+      "https://github.com/Deepanshuu06/PERSONAL-PROTFOLIO-V2",
+  },
+  {
     name: "Coding Shuttle",
     id: "438221",
     description: "A pixel-perfect clone of the Coding Shuttle homepage, built using HTML, CSS, and JavaScript to practice layout and responsive design.",
@@ -182,7 +203,7 @@ const minorProjects = [
     source_code_link: "https://github.com/Deepanshuu06/coding-shuttle-clone",
   },
   {
-    name: "Fenta Landing Page",
+    name: "Fanta Landing Page",
     id: "724572",
     description: "A sleek and modern landing page for a fictional brand, built with Next.js and styled using Tailwind CSS for responsive, clean UI.",
     technologies: [
@@ -195,7 +216,8 @@ const minorProjects = [
     deployedLink: "https://fenta-landingpage.netlify.app/",
     source_code_link:
       "https://github.com/Deepanshuu06/Fanta_fontend",
-  },
+  }
+ 
 ];
 
 
@@ -314,7 +336,6 @@ export const ABOUT_CONTENT = {
 const DeveloperIllustration = [
   "https://res.cloudinary.com/deepanshu06/image/upload/v1744972228/dev2-removebg_socch5.png",
   "https://res.cloudinary.com/deepanshu06/image/upload/v1744804232/image-removebg_nywpjg.png",
-  "https://res.cloudinary.com/deepanshu06/image/upload/v1744972321/image_ss9rpu.png",
   "https://res.cloudinary.com/deepanshu06/image/upload/v1744993105/devloper-removebg_bc2por.png",
   "https://res.cloudinary.com/deepanshu06/image/upload/v1744993247/devloperv2-removebg_auydsk.png"
 ];

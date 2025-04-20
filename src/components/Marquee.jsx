@@ -3,7 +3,7 @@ import React from "react";
 
 function Marquee() {
   return (
-    <div className="w-full bg-green lg:rounded-t-3xl mt-20 py-2 lg:py-13 overflow-hidden">
+    <div className="w-full bg-green lg:rounded-3xl mt-20 py-2 lg:py-13 overflow-hidden">
       <motion.div
         className="flex gap-8 whitespace-nowrap"
         animate={{ x: ["0%", "-100%"] }}

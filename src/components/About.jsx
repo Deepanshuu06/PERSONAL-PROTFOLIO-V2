@@ -32,9 +32,9 @@ function About() {
         <div className=" w-[100%] lg:w-[60%]">
           <div className="justify-center flex  ">
             <img
-              src={DeveloperIllustration[Math.floor(Math.random() * 5)]}
+              src={DeveloperIllustration[Math.floor(Math.random() * 4)]}
               alt="Web development illustration"
-              className=" h-[45vh] lg:h-[75vh]  "
+              className=" h-[45vh] lg:h-[70vh]  "
               loading="lazy"
             />
           </div>
