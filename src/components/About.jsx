@@ -20,7 +20,7 @@ function About() {
               <li className="flex gap-3" key={index}>
                 <span className="text-2xl mt-1">•</span>
                 <div>
-                  <h3 className="font-semibold text-lg text-[5vw] md:text-xl">
+                  <h3 className= "font-semibold text-lg text-[5vw] md:text-xl">
                     {service.title}
                   </h3>
                   <p className="mt-1">{service.description}</p>

@@ -63,7 +63,7 @@ function Hero() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <p className="flex flex-col justify-center items-center text-center mt-10">
+          <p className="flex flex-col justify-center items-center text-center mt-10 ">
             My goal is to write maintainable
             <br />
             clean code to build scalable and efficient applications
