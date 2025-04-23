@@ -29,7 +29,7 @@ export const navLinks = [
 
 export const personalDetails = {
   name: "Deepanshu Baghel",
-  resumeLink: "",
+  resumeLink: "https://drive.google.com/file/d/1qIH95ZADCAzie9JdVU_APnpiG3RSfjdg/view?usp=sharing",
 };
 
 export const logos = [
